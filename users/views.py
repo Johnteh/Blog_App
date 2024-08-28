@@ -13,7 +13,7 @@ def register(request):
             messages.success(request, f'Account succesfully created for {username}!')
             return redirect('login')
     else:
-        form = UserRegisterForm(request.POST)
+        form = UserRegisterForm()
 
 
     
